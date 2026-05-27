@@ -17,10 +17,11 @@ Organizations need to reduce the risk of excessive or unnecessary administrator 
 - Privileged Identity Management
 - Microsoft Entra roles
 - Eligible role assignments
-- Role activation
-- Justification
+- Just-in-time activation
+- Role activation justification
+- Time-limited privileged access
 - Break-glass account planning
-- Audit history
+- PIM audit history
 - GitHub documentation
 - Screenshots as audit evidence
 
@@ -40,7 +41,7 @@ Organizations need to reduce the risk of excessive or unnecessary administrator 
 
 The lab focuses on safer privileged access using lower-risk administrator roles instead of assigning permanent Global Administrator access.
 
-Example roles used:
+Roles used or documented:
 
 - Groups Administrator
 - User Administrator
@@ -118,7 +119,7 @@ Just-in-time access allows privileged access to be activated only for a limited 
 
 ### Justification
 
-Justification requires the user to document why they need privileged access before activating the role.
+Justification requires the user to document why privileged access is needed before activating the role.
 
 ### Least Privilege
 
@@ -131,6 +132,20 @@ Break-glass accounts provide emergency access if normal administrator access is 
 ### Audit Evidence
 
 PIM audit history helps show role assignments, activations, and privileged access activity.
+
+## Testing Approach
+
+The lab followed this basic process:
+
+1. Opened Microsoft Entra Privileged Identity Management.
+2. Selected a safer administrator role for testing.
+3. Assigned the role as eligible instead of permanently active.
+4. Reviewed role settings.
+5. Signed in as the PIM test user.
+6. Activated the eligible role.
+7. Entered a business justification.
+8. Confirmed the role became active temporarily.
+9. Captured audit evidence.
 
 ## Resume Bullet
 
